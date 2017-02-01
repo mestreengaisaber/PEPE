@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="includes/jquery.js"></script>
+        <script src="includes/jquery.validate.js"></script>
+      
+        <title></title>
+        <script>
+         $(document).ready(function() {
+              $("#frmDatos").validate({
+                rules: {
+                  nombre: "required",
+                  mail: {required: true,email: true},
+                  edad: {number: true}
+                },
+                messages: {
+                  nombre: "Nombre incorrecto",
+                  mail : "Email no Valido",
+                  edad : "Edad Incorrecta"
+                }
+              });
+            });
+        </script>
+        <style>
+            .error-message, label.error {
+                color: #ff0000;
+                margin:0;
+                display: inline;
+                font-size: 1em !important;
+                font-weight:lighter;
+            }
+        </style>
+
+    </head>
+    <body>
+      <h3>Prueba de Validate jQuery</h3>
+        <form name="frmDatos" id="frmDatos">
+          <table>
+             <tr>
+               <td>
+                  <input type="text" name="nombre" id="nombre" />
+               </td>
+             </tr>
+             <tr>
+               <td>
+                  <input type="text" name="mail" id="mail" />
+               </td>
+             </tr>
+             <tr>
+                <td>
+                   <input type="text" name="edad" id="edad" />
+                </td>
+             </tr>
+          </table>
+          <input id="buton"type="submit" value="Enviar" />
+         </form>
+      <em><a href="http://isaiasmsp.wordpress.com"><font size="2">By Isaias Aguirre</font></a> </em>
+    </body>
+</html>

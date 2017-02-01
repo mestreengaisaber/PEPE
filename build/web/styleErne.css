@@ -1,0 +1,28 @@
+body {
+	
+              background-color: #eae9e9;
+            <!--background:url(images/bg.png)-->}
+              
+   
+    #loguin {
+    
+	float: right;height: 25px; width: 500px;
+    }
+     #menu {
+    
+	float: right;height: 20px; width: 500px;
+    }
+    
+    #cuerpoizquierda{
+        float: right; height: 75px; width: 200px;
+    }
+    
+    #cuerpoderecha{
+        float: right; height: 75px; width: 300px;
+    }
+    
+    #piedePagina{
+        clear: both; height: 35px; width: 500px;
+    }
+   
+    

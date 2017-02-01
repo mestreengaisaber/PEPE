@@ -1,0 +1,34 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <form name="form1"/>
+        <label>DNI;</label> <input type="text" name ="dni" required pattern="(([X-Z]{1})([-]?)(\d{7})([-]?)([A-Z]{1}))|((\d{8})([-]?)([A-Z]{1}))" title="pon un dni correcto" oninput="verificar()"/><br>
+        <span id='acotacion'>*</span>
+        <label>VALOR:</label> <input type="text" name="valor"/><br>
+        </form>
+        <script>
+            window.addEventListener('load', init);
+            function init(){
+                
+            }
+            function verificar(){
+                var es_valido=document.form1.dni.checkValidity();
+                if(es_valido) console.log('Bien !');
+                else console.log('Error ;(');
+                
+                
+            }
+            
+        </script>
+    </body>
+    
+    
+</html>
